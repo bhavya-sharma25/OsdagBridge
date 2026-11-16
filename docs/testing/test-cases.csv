@@ -1,0 +1,11 @@
+test_id,scenario,run_id,status,geometry,materials,actions,observed_result,evidence,related_upstream_issue,notes
+TC-001,Initial user-executed baseline,run-01,FAIL_OBSERVED,"Highway Bridge; span 30 m; 4 girders; carriageway 7.5 m; X-bracing enabled","E350A steel; M40 concrete; custom values not recorded","Single design run; report generated","Overall design FAIL; maximum utilization 1.58; deflection 51.225 mm against 50 mm limit; section display/selection mismatch reported (IS 100x100x10 versus 40x40x3); unit display discrepancy reported","Awaiting original .osi, report PDF, screenshots, and input/output dictionaries","Review #44 #65 #66 #90 and relevant component/section issues before classifying each symptom","User previously reported this run. Exact software commit, OS/Python versions, remaining input fields, raw dictionaries, and independent reference calculation are not yet attached. Do not treat as a validated pass."
+TC-002,Custom girder steel propagation,not-run,NOT_RUN,,,,,,#19 #20,
+TC-003,Independent cross-bracing and end-diaphragm steel grades,not-run,NOT_RUN,,,,,,#43,
+TC-004,Custom concrete deck density and strength,not-run,NOT_RUN,,,,,,#41,
+TC-005,Three consecutive designs in one GUI session,not-run,NOT_RUN,,,,,,#85,
+TC-006,Save and reload custom materials through OSI,not-run,NOT_RUN,,,,,,#19 #96,
+TC-007,3D CAD and structural plot refresh after each run,not-run,NOT_RUN,,,,,,#85,
+TC-008,Input/output dictionary and report consistency,not-run,NOT_RUN,,,,,,#65 #66 #74,
+TC-009,Boundary geometry validation,not-run,NOT_RUN,,,,,,#69 #88,
+TC-010,All component output coverage,not-run,NOT_RUN,,,,,,#43 #94,
